@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #222;
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+ background-image: linear-gradient(62deg, #fbbc89 0%, #f7cf68fc 100%);
+max-width: 60rem;
+  margin: 10rem auto;
+  padding-bottom: 3rem;
+  text-align: center;
+  border-radius: 2rem;
+  min-height: 50rem;
+}
+.header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  border-bottom: 1px solid black;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  font-weight: 100;
+  color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+}
+.todo-img {
+  width: 6rem;
+  height: 6rem;
+}
+.todo-list {
+  padding-left: 8rem;
+  padding-right: 8rem;
+ 
+}
+.add-todo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+.todo-input {
+  border: none;
+  outline: none;
+  background-color: #ebfffc;
+  color: #555;
+  padding: 1rem 2rem;
+  height: 4rem;
+  border-radius: 3rem;
+  margin-right: 2rem;
+  font-size: 1.8rem;
+}
+.btn {
+  border: none;
+  outline: none;
+
+  background-color: #f76707;
+
+  color: #e9ecef;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+.btn-add {
+  height: 4rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  width: 17rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.todo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.para p {
+  
+  font-size: 2rem; 
+  font-weight: 450; 
+  color: #333; 
+  line-height: 1.5; 
+  margin: 0; /
+}
+.td-btn {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: 4rem;
+}
+.btn-2 {
+  width: 8rem;
+  padding: 1rem 1.5rem;
+  border-radius: 6rem;
+  font-weight: 500;
+}
+
+.edit-input {
+  border: none;
+  outline: none;
+  background-color: #ebfffc;
+  color: #555;
+  padding: 1rem 2rem;
+  height: 2.5rem;
+  border-radius: 3rem;
+  font-size: 1.8rem;
+  width: 20rem;
+}
