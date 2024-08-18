@@ -10,18 +10,18 @@ addButton.addEventListener("click", function (e) {
   if (inp === "") {
     return;
   }
-  const html = `<div class="todo">
+  const html = `<li class="todo">
   <div class="para"><p>${inp}</p></div>
   <div class="td-btn">
     <button class="btn btn-2 btn-edit">EDIT</button>
     <button class="btn btn-2 btn-del">DELETE</button>
   </div>
-</div>`;
+</li>`;
   todoList.insertAdjacentHTML("beforeend", html);
   inputText.value = "";
 });
 
-//Using event bubbling
+//Event Delegation
 todoList.addEventListener("click", function (e) {
   const click = e.target;
   //Delete Functionality

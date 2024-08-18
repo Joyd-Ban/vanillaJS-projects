@@ -20,7 +20,9 @@ max-width: 60rem;
   text-align: center;
   border-radius: 2rem;
   min-height: 50rem;
+ 
 }
+
 .header {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -42,15 +44,19 @@ max-width: 60rem;
 .todo-list {
   padding-left: 8rem;
   padding-right: 8rem;
- 
+  counter-reset: item;
+  font-size: 2rem;
+
 }
+
 .add-todo {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 8rem;
+  padding-left: 6rem;
   padding-right: 8rem;
+  gap: 5rem;
 }
 .todo-input {
   border: none;
@@ -58,10 +64,34 @@ max-width: 60rem;
   background-color: #ebfffc;
   color: #555;
   padding: 1rem 2rem;
-  height: 4rem;
+  height: 5rem;
   border-radius: 3rem;
   margin-right: 2rem;
   font-size: 1.8rem;
+  width: 60rem;
+}
+
+.todo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+  counter-increment: item;
+  position: relative;
+}
+.todo::before {
+  content: counter(item) ". ";
+  position: absolute;
+  left: -2rem;
+}
+.para p {
+  
+  font-size: 2rem; 
+  font-weight: 450; 
+  color: #333; 
+  line-height: 1.5; 
+  margin: 0; /
 }
 .btn {
   border: none;
@@ -76,27 +106,12 @@ max-width: 60rem;
   transform: scale(1.05);
 }
 .btn-add {
-  height: 4rem;
+  height: 5rem;
   padding: 1rem 2rem;
   border-radius: 2rem;
-  width: 17rem;
+  width: 30rem;
   font-size: 1.8rem;
   font-weight: 600;
-}
-.todo {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 3rem;
-}
-.para p {
-  
-  font-size: 2rem; 
-  font-weight: 450; 
-  color: #333; 
-  line-height: 1.5; 
-  margin: 0; /
 }
 .td-btn {
   display: flex;
@@ -111,6 +126,12 @@ max-width: 60rem;
   border-radius: 6rem;
   font-weight: 500;
 }
+.btn-edit{
+  background-color: #f76707;
+}
+.btn-del{
+  background-color: #e8590c;
+}
 
 .edit-input {
   border: none;
@@ -123,3 +144,6 @@ max-width: 60rem;
   font-size: 1.8rem;
   width: 20rem;
 }
+
+
+
