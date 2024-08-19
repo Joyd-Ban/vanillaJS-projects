@@ -8,6 +8,53 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <div class="search">
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="Enter location"
+          class="search-location"
+        />
+        <img
+          src="images/search-interface-symbol.png"
+          alt=""
+          class="search-img"
+        />
+        <img src="images/location.png" alt="" class="location-img" />
+      </div>
+      <div class="weather hidden">
+        <img src="images/sun.png" alt="" class="weather-img" />
+        <div class="temp">
+          <img src="images/thermometer.png" alt="" />
+          <h1 class="weather-temp"></h1>
+        </div>
+        <h2 class="weather-city"></h2>
+        <div class="details">
+          <div class="col">
+            <img src="images/humidity.png" alt="" />
+            <div>
+              <p class="humidity"></p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="images/pressure.png" alt="" />
+            <div>
+              <p class="pressure"></p>
+              <p>Pressure</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="images/wind.png" alt="" />
+            <div>
+              <p class="wind"></p>
+              <p>Wind</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
